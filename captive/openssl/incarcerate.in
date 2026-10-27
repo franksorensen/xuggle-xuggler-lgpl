@@ -43,6 +43,9 @@ case $HOST_OS in
       *x86_64*)
       OPENSSL_CONFIG=linux-generic64
       ;;
+      *aarch64*)
+      OPENSSL_CONFIG=linux-generic64
+      ;;
       *)
       OPENSSL_CONFIG=linux-generic32
       ;;
