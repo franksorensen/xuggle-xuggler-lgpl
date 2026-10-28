@@ -35,7 +35,7 @@
 #ifndef CB_SEARCH_H
 #define CB_SEARCH_H
 
-#include <speex/speex_bits.h>
+#include "speex/speex_bits.h"
 #include "arch.h"
 
 /** Split codebook parameters. */
@@ -70,7 +70,7 @@ const void *par,                /* non-overlapping codebook */
 int   nsf,                      /* number of samples in subframe */
 SpeexBits *bits,
 char *stack,
-spx_int32_t *seed
+spx_uint32_t *seed
 );
 
 
@@ -97,7 +97,7 @@ const void *par,                /* non-overlapping codebook */
 int   nsf,                      /* number of samples in subframe */
 SpeexBits *bits,
 char *stack,
-spx_int32_t *seed
+spx_uint32_t *seed
 );
 
 #endif
